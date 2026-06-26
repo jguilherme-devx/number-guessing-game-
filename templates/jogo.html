@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>play - chute o numero</title>
+
+        <link rel="stylesheet"
+              href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+    <body>
+
+            <h1 class="titulo">chute o numero</h1>
+
+            <form action="" method="post">
+
+            <input type="number" class="input-p" name="numForm" placeholder="digite o numero aqui...">
+                
+            </form>
+
+            {% if acertou == None %}
+            {% elif acertou == True %}
+              <h1 class="acertou">você acertou!(:</h1>
+            {% else %}
+              <h1 class="errou">você errou!):</h1>
+            {% endif %}
+
+              <div class="container2">
+                  <h1>tentativas: {{ tentativas }} 💀</h1>
+              </div>
+
+    </body>
+<html>

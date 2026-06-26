@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>chute o numero</title>
+        <link rel="stylesheet"
+              href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <h1>Bem vindo!</h1>
+            <h1>você tem que chutar um numero entre 1 a 100!</h1>
+            <h1>o numero muda a cada tentativa.<br>boa sorte💀</h1>
+
+            <a href="{{ url_for('jogo') }}">
+                <button>play</button>
+            </a>
+
+        </div>
+
+    </body>
+</html>
